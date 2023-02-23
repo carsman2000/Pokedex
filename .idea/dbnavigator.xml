@@ -13,7 +13,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="44661c43-d3f0-4a1b-b31c-18f5c14dee42">
-      <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[select name, description from main.Abilities where]]></console>
+      <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[select * from "Pokemon"]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -23,12 +23,17 @@
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="44661c43-d3f0-4a1b-b31c-18f5c14dee42" dataset="main.Abilities" active-filter-id="" />
     <filter-actions connection-id="44661c43-d3f0-4a1b-b31c-18f5c14dee42" dataset="main.Pokemon" active-filter-id="3ffff5dc-a1a0-4fd5-b446-20b1347806d6">
       <filter id="3ffff5dc-a1a0-4fd5-b446-20b1347806d6" name="1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="dexNum" operator="=" value="1" active="true" />
       </filter>
     </filter-actions>
-    <filter-actions connection-id="44661c43-d3f0-4a1b-b31c-18f5c14dee42" dataset="main.Types" active-filter-id="" />
+    <filter-actions connection-id="44661c43-d3f0-4a1b-b31c-18f5c14dee42" dataset="main.Types" active-filter-id="ea91edbb-3d35-4bc0-956f-5a9006b632fc">
+      <filter id="ea91edbb-3d35-4bc0-956f-5a9006b632fc" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="typeID" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
@@ -66,7 +71,7 @@
           <deprecated-pwd value="" />
         </database>
         <properties>
-          <auto-commit value="true" />
+          <auto-commit value="false" />
         </properties>
         <ssh-settings>
           <active value="false" />
