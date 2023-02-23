@@ -13,17 +13,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="44661c43-d3f0-4a1b-b31c-18f5c14dee42">
-      <console name="Connection" type="STANDARD" schema="" session="Main"><![CDATA[CREATE TABLE Pokemon (
-    dexNum INTEGER PRIMARY KEY,
-    name TEXT NOT NULL,
-    species TEXT NOT NULL,
-    type1 INTEGER NOT NULL,
-    type2 INTEGER,
-    abilityID INTEGER NOT NULL,
-    hiddenAbilityID INTEGER,
-    height REAL NOT NULL,
-    
-);]]></console>
+      <console name="Connection" type="STANDARD" schema="main" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -32,9 +22,21 @@
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="44661c43-d3f0-4a1b-b31c-18f5c14dee42" dataset="main.Pokemon" active-filter-id="" />
+    <filter-actions connection-id="44661c43-d3f0-4a1b-b31c-18f5c14dee42" dataset="main.Types" active-filter-id="" />
+  </component>
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
+  </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
     <filters />
+  </component>
+  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
+    <recently-used-interfaces>
+      <mapping database-type="SQLITE" interface-id="6c95ba11-741b-4191-a74e-fbcb87faa3b1" />
+    </recently-used-interfaces>
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
@@ -443,7 +445,9 @@
         <prompt-execution value="false" />
       </statement-execution>
       <script-execution>
-        <command-line-interfaces />
+        <command-line-interfaces>
+          <value id="6c95ba11-741b-4191-a74e-fbcb87faa3b1" name="SQLite terminal" executable-path="$PROJECT_DIR$/../../../../../sqlite/sqlite3.exe" database-type="SQLITE" />
+        </command-line-interfaces>
         <execution-timeout value="300" />
       </script-execution>
       <method-execution>
