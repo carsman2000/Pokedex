@@ -13,7 +13,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="44661c43-d3f0-4a1b-b31c-18f5c14dee42">
-      <console name="Connection" type="STANDARD" schema="main" session="Main" />
+      <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[select name, description from main.Abilities where]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -23,7 +23,11 @@
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="44661c43-d3f0-4a1b-b31c-18f5c14dee42" dataset="main.Pokemon" active-filter-id="" />
+    <filter-actions connection-id="44661c43-d3f0-4a1b-b31c-18f5c14dee42" dataset="main.Pokemon" active-filter-id="3ffff5dc-a1a0-4fd5-b446-20b1347806d6">
+      <filter id="3ffff5dc-a1a0-4fd5-b446-20b1347806d6" name="1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="dexNum" operator="=" value="1" active="true" />
+      </filter>
+    </filter-actions>
     <filter-actions connection-id="44661c43-d3f0-4a1b-b31c-18f5c14dee42" dataset="main.Types" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
@@ -62,7 +66,7 @@
           <deprecated-pwd value="" />
         </database>
         <properties>
-          <auto-commit value="false" />
+          <auto-commit value="true" />
         </properties>
         <ssh-settings>
           <active value="false" />
